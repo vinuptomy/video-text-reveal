@@ -12,7 +12,7 @@ interface VisualCardProps {
 const VisualCard: React.FC<VisualCardProps> = ({ id, image, title, category }) => {
   return (
     <Link to={`/article/${id}`} className="block visual-card group">
-      <div className="aspect-[16/9] overflow-hidden rounded-lg">
+      <div className="aspect-[16/9] overflow-hidden rounded-lg shadow-md">
         <img 
           src={image} 
           alt={title}
@@ -22,10 +22,10 @@ const VisualCard: React.FC<VisualCardProps> = ({ id, image, title, category }) =
       </div>
       
       <div className="visual-card-overlay">
-        <span className="inline-block px-3 py-1 text-xs bg-white/20 backdrop-blur-sm rounded-full mb-3">
+        <span className="inline-block px-3 py-1 text-xs bg-purple-DEFAULT/30 backdrop-blur-sm rounded-full mb-3">
           {category}
         </span>
-        <h3 className="text-xl md:text-2xl font-medium mb-2">{title}</h3>
+        <h3 className="text-xl md:text-2xl font-medium mb-2 text-glow">{title}</h3>
         <p className="text-white/80 text-sm">
           Explore Article
         </p>

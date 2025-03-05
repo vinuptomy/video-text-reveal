@@ -1,6 +1,7 @@
 
 import React, { useRef, useEffect } from 'react';
 import VisualCard from './VisualCard';
+import { Sparkles } from 'lucide-react';
 
 const VisualCardsSection: React.FC = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -74,10 +75,17 @@ const VisualCardsSection: React.FC = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} className="py-20 px-4 md:px-8 bg-gray-50">
+    <section ref={sectionRef} className="py-20 px-4 md:px-8 bg-gradient-to-br from-purple-light/10 to-blue-light/20">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-light text-center mb-4">Featured Stories</h2>
-        <p className="text-center text-gray-600 max-w-2xl mx-auto mb-16">
+        <div className="flex items-center justify-center mb-4">
+          <Sparkles className="text-purple-DEFAULT w-6 h-6 mr-2" />
+          <h2 className="text-3xl md:text-4xl font-light text-center text-purple-dark">
+            Featured Stories
+          </h2>
+          <Sparkles className="text-purple-DEFAULT w-6 h-6 ml-2" />
+        </div>
+        
+        <p className="text-center text-blue-dark max-w-2xl mx-auto mb-16">
           Explore our collection of articles and insights on design, innovation, and creative thinking.
         </p>
         

@@ -1,5 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
+import { Sparkles } from 'lucide-react';
 
 interface TextAnimationProps {
   originalText: string;
@@ -14,10 +15,10 @@ const HeroSection: React.FC = () => {
   const [fadeOut, setFadeOut] = useState(false);
 
   const textSequence: TextAnimationProps[] = [
-    { originalText: "Simplicity", newText: "Innovation", delay: 4000 },
-    { originalText: "Innovation", newText: "Excellence", delay: 4000 },
-    { originalText: "Excellence", newText: "Craftsmanship", delay: 4000 },
-    { originalText: "Craftsmanship", newText: "Simplicity", delay: 4000 },
+    { originalText: "Creativity", newText: "Innovation", delay: 4000 },
+    { originalText: "Innovation", newText: "Elegance", delay: 4000 },
+    { originalText: "Elegance", newText: "Imagination", delay: 4000 },
+    { originalText: "Imagination", newText: "Creativity", delay: 4000 },
   ];
 
   useEffect(() => {
@@ -78,23 +79,27 @@ const HeroSection: React.FC = () => {
       
       <div className="hero-overlay">
         <div className="text-center px-4 max-w-4xl">
-          <h2 className="text-xl md:text-2xl font-light mb-4 opacity-0 animate-fade-in" style={{ animationDelay: '0.3s' }}>
-            Designed with purpose
-          </h2>
+          <div className="flex items-center justify-center mb-4">
+            <Sparkles className="text-purple-light w-6 h-6 mr-2 animate-pulse" />
+            <h2 className="text-xl md:text-2xl font-light opacity-0 animate-fade-in text-glow" style={{ animationDelay: '0.3s' }}>
+              Inspired by imagination
+            </h2>
+            <Sparkles className="text-purple-light w-6 h-6 ml-2 animate-pulse" />
+          </div>
           
           <div className="h-24 flex items-center justify-center">
-            <h1 className={`text-4xl md:text-6xl lg:text-7xl font-light tracking-tight ${textVisible ? 'opacity-100' : 'opacity-0'} transition-opacity duration-500 ${strikeThrough ? 'text-stroke active' : ''} ${fadeOut ? 'opacity-30' : ''}`}>
+            <h1 className={`text-4xl md:text-6xl lg:text-7xl font-light tracking-tight ${textVisible ? 'opacity-100' : 'opacity-0'} transition-opacity duration-500 ${strikeThrough ? 'text-stroke active' : ''} ${fadeOut ? 'opacity-30' : ''} text-glow`}>
               {textSequence[currentTextIndex].originalText}
             </h1>
           </div>
           
           <p className="text-lg md:text-xl mt-6 max-w-2xl mx-auto font-light opacity-0 animate-fade-in" style={{ animationDelay: '0.6s' }}>
-            Creating meaningful experiences through thoughtful design and meticulous attention to detail.
+            Crafting digital experiences through a blend of artistry and technology.
           </p>
           
           <div className="mt-10 opacity-0 animate-fade-in" style={{ animationDelay: '0.9s' }}>
-            <button className="px-8 py-3 border border-white hover:bg-white hover:text-black transition-all duration-300 rounded-sm text-sm tracking-wider">
-              DISCOVER
+            <button className="px-8 py-3 bg-purple-DEFAULT hover:bg-purple-dark text-white transition-all duration-300 rounded-md text-sm tracking-wider shadow-lg hover:shadow-xl">
+              EXPLORE
             </button>
           </div>
         </div>
