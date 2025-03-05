@@ -18,7 +18,7 @@ const HeroSection: React.FC = () => {
     { originalText: "Creativity", newText: "Innovation", delay: 4000 },
     { originalText: "Innovation", newText: "Elegance", delay: 4000 },
     { originalText: "Elegance", newText: "Imagination", delay: 4000 },
-    { originalText: "Imagination", newText: "Creativity", delay: 4000 },
+    { originalText: "Imagination", newText: "Creativity", delay: 7000 }, // Longer display time
   ];
 
   useEffect(() => {
@@ -35,7 +35,10 @@ const HeroSection: React.FC = () => {
     
     // Animation sequence
     const strikeTimer = setTimeout(() => {
-      setStrikeThrough(true);
+      // Only apply strikethrough to the first three iterations
+      if (currentTextIndex < 3) {
+        setStrikeThrough(true);
+      }
     }, textSequence[currentTextIndex].delay - 2000);
     
     const fadeTimer = setTimeout(() => {
@@ -79,13 +82,9 @@ const HeroSection: React.FC = () => {
       
       <div className="hero-overlay">
         <div className="text-center px-4 max-w-4xl">
-          <div className="flex items-center justify-center mb-4">
-            <Sparkles className="text-purple-light w-6 h-6 mr-2 animate-pulse" />
-            <h2 className="text-xl md:text-2xl font-light opacity-0 animate-fade-in text-glow" style={{ animationDelay: '0.3s' }}>
-              Inspired by imagination
-            </h2>
-            <Sparkles className="text-purple-light w-6 h-6 ml-2 animate-pulse" />
-          </div>
+          <h2 className="text-4xl md:text-6xl lg:text-7xl font-light opacity-0 animate-fade-in text-glow mb-4" style={{ animationDelay: '0.3s' }}>
+            Inspired by imagination
+          </h2>
           
           <div className="h-24 flex items-center justify-center">
             <h1 className={`text-4xl md:text-6xl lg:text-7xl font-light tracking-tight ${textVisible ? 'opacity-100' : 'opacity-0'} transition-opacity duration-500 ${strikeThrough ? 'text-stroke active' : ''} ${fadeOut ? 'opacity-30' : ''} text-glow`}>
@@ -98,7 +97,7 @@ const HeroSection: React.FC = () => {
           </p>
           
           <div className="mt-10 opacity-0 animate-fade-in" style={{ animationDelay: '0.9s' }}>
-            <button className="px-8 py-3 bg-purple-DEFAULT hover:bg-purple-dark text-white transition-all duration-300 rounded-md text-sm tracking-wider shadow-lg hover:shadow-xl">
+            <button className="px-8 py-3 bg-blue-DEFAULT hover:bg-blue-dark text-white transition-all duration-300 rounded-md text-sm tracking-wider shadow-lg hover:shadow-xl">
               EXPLORE
             </button>
           </div>
