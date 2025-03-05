@@ -22,7 +22,7 @@ const VisualCard: React.FC<VisualCardProps> = ({ id, image, title, category }) =
       </div>
       
       <div className="visual-card-overlay">
-        <span className="inline-block px-3 py-1 text-xs bg-blue-DEFAULT/30 backdrop-blur-sm rounded-full mb-3">
+        <span className="inline-block px-3 py-1 text-xs bg-blue-dark/30 backdrop-blur-sm rounded-full mb-3">
           {category}
         </span>
         <h3 className="text-xl md:text-2xl font-medium mb-2 text-glow">{title}</h3>

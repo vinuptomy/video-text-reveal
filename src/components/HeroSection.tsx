@@ -13,6 +13,7 @@ const HeroSection: React.FC = () => {
   const [textVisible, setTextVisible] = useState(false);
   const [strikeThrough, setStrikeThrough] = useState(false);
   const [fadeOut, setFadeOut] = useState(false);
+  const [firstLineText, setFirstLineText] = useState("Inspired by imagination");
 
   const textSequence: TextAnimationProps[] = [
     { originalText: "Creativity", newText: "Innovation", delay: 4000 },
@@ -49,6 +50,12 @@ const HeroSection: React.FC = () => {
       setTextVisible(false);
       setStrikeThrough(false);
       setFadeOut(false);
+      
+      // Change first line text when fourth text (Imagination) appears
+      if (currentTextIndex === 2) { // About to show the fourth text (index 3)
+        setFirstLineText("Powered by innovation");
+      }
+      
       setCurrentTextIndex((prevIndex) => (prevIndex + 1) % textSequence.length);
       
       // Show the next text after a short delay
@@ -83,7 +90,7 @@ const HeroSection: React.FC = () => {
       <div className="hero-overlay">
         <div className="text-center px-4 max-w-4xl">
           <h2 className="text-4xl md:text-6xl lg:text-7xl font-light opacity-0 animate-fade-in text-glow mb-4" style={{ animationDelay: '0.3s' }}>
-            Inspired by imagination
+            {firstLineText}
           </h2>
           
           <div className="h-24 flex items-center justify-center">
