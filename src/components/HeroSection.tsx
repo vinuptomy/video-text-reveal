@@ -53,7 +53,7 @@ const HeroSection: React.FC = () => {
       
       // Change first line text when fourth text (Imagination) appears
       if (currentTextIndex === 2) { // About to show the fourth text (index 3)
-        setFirstLineText("Powered by innovation");
+        setFirstLineText("Powered by AI");
       }
       
       setCurrentTextIndex((prevIndex) => (prevIndex + 1) % textSequence.length);
