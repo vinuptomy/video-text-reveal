@@ -15,7 +15,7 @@ const Consulting: React.FC = () => {
         <h1 className="text-4xl md:text-5xl font-light text-blue-dark mb-6">AI Consulting Services</h1>
         
         <img 
-          src="https://images.unsplash.com/photo-1682687220363-35e4621ed990?q=80&w=1770&auto=format&fit=crop" 
+          src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-4.0.3&auto=format&fit=crop&w=1965&q=80" 
           alt="AI Consulting Services" 
           className="w-full h-64 md:h-80 object-cover rounded-lg mb-8"
         />

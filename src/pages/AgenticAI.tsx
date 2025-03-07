@@ -15,7 +15,7 @@ const AgenticAI: React.FC = () => {
         <h1 className="text-4xl md:text-5xl font-light text-blue-dark mb-6">Agentic AI Development</h1>
         
         <img 
-          src="https://images.unsplash.com/photo-1676299481101-d18deb16ab3d?q=80&w=1780&auto=format&fit=crop" 
+          src="https://images.unsplash.com/photo-1675483344627-5ef16e96ef7e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1770&q=80" 
           alt="Agentic AI Development" 
           className="w-full h-64 md:h-80 object-cover rounded-lg mb-8"
         />

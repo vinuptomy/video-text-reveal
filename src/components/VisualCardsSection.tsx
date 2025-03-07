@@ -9,42 +9,42 @@ const VisualCardsSection: React.FC = () => {
   const cards = [
     {
       id: "1",
-      image: "https://images.unsplash.com/photo-1679958157990-f291c0bb88b9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1955&q=80",
+      image: "https://images.unsplash.com/photo-1677442135136-760c813a743a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1932&q=80",
       title: "The Future of Large Language Models",
       category: "AI Research",
       gradient: "from-blue-800 to-purple-800"
     },
     {
       id: "2",
-      image: "https://images.unsplash.com/photo-1655720828083-8a3dde865201?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1932&q=80",
+      image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-4.0.3&auto=format&fit=crop&w=1965&q=80",
       title: "Implementing AI in Enterprise Workflows",
       category: "Strategy",
       gradient: "from-purple-800 to-pink-700"
     },
     {
       id: "3",
-      image: "https://images.unsplash.com/photo-1686191128864-3e2cfacf1aa8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1780&q=80",
+      image: "https://images.unsplash.com/photo-1681117717962-6a56a45f06c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1780&q=80",
       title: "Ethical Considerations in AI Development",
       category: "Ethics",
       gradient: "from-pink-700 to-red-700"
     },
     {
       id: "4",
-      image: "https://images.unsplash.com/photo-1684079159853-e2c2728eed8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80",
+      image: "https://images.unsplash.com/photo-1675483344627-5ef16e96ef7e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1770&q=80",
       title: "AI-Driven Process Automation",
       category: "Implementation",
       gradient: "from-blue-800 to-cyan-600"
     },
     {
       id: "5",
-      image: "https://images.unsplash.com/photo-1677442136019-21740b2dd9fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1932&q=80",
+      image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-4.0.3&auto=format&fit=crop&w=1965&q=80",
       title: "The Rise of Multimodal AI Systems",
       category: "Technology",
       gradient: "from-emerald-700 to-green-800"
     },
     {
       id: "6",
-      image: "https://images.unsplash.com/photo-1692607431293-499496dcd826?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1932&q=80",
+      image: "https://images.unsplash.com/photo-1676531901179-9a24937c72cd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1932&q=80",
       title: "AI Training Workshop Success Stories",
       category: "Case Studies",
       gradient: "from-indigo-800 to-violet-900"

@@ -16,7 +16,7 @@ const ImageGrid: React.FC = () => {
   
   const images: ImageProps[] = [
     {
-      src: "https://images.unsplash.com/photo-1677442135136-760c813a743a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1932&q=80",
+      src: "https://images.unsplash.com/photo-1677442135136-760c813a743a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1932&q=80",
       alt: "AI machine learning visualization",
       title: "Generative AI Solutions",
       description: "Custom AI solutions to transform your business processes",
@@ -24,7 +24,7 @@ const ImageGrid: React.FC = () => {
       link: "/generative-ai"
     },
     {
-      src: "https://images.unsplash.com/photo-1682687220363-35e4621ed990?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80",
+      src: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-4.0.3&auto=format&fit=crop&w=1965&q=80",
       alt: "Futuristic AI interface",
       title: "AI Consulting Services",
       description: "Expert guidance on implementing AI in your organization",
@@ -32,7 +32,7 @@ const ImageGrid: React.FC = () => {
       link: "/consulting"
     },
     {
-      src: "https://images.unsplash.com/photo-1676299481101-d18deb16ab3d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1780&q=80",
+      src: "https://images.unsplash.com/photo-1675483344627-5ef16e96ef7e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1770&q=80",
       alt: "AI agent concept",
       title: "Agentic AI Development",
       description: "Building autonomous AI agents for complex business tasks",
