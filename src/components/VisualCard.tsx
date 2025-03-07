@@ -7,9 +7,10 @@ interface VisualCardProps {
   image: string;
   title: string;
   category: string;
+  gradient?: string;
 }
 
-const VisualCard: React.FC<VisualCardProps> = ({ id, image, title, category }) => {
+const VisualCard: React.FC<VisualCardProps> = ({ id, image, title, category, gradient = "from-blue-DEFAULT to-blue-dark" }) => {
   return (
     <Link to={`/article/${id}`} className="block visual-card group">
       <div className="aspect-[16/9] overflow-hidden rounded-lg shadow-md">
@@ -21,7 +22,7 @@ const VisualCard: React.FC<VisualCardProps> = ({ id, image, title, category }) =
         />
       </div>
       
-      <div className="visual-card-overlay">
+      <div className={`visual-card-overlay bg-gradient-to-t ${gradient} bg-opacity-80`}>
         <span className="inline-block px-3 py-1 text-xs bg-blue-dark/30 backdrop-blur-sm rounded-full mb-3">
           {category}
         </span>

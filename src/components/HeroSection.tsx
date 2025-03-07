@@ -11,8 +11,6 @@ interface TextAnimationProps {
 const HeroSection: React.FC = () => {
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
   const [textVisible, setTextVisible] = useState(false);
-  const [fadeOut, setFadeOut] = useState(false);
-  const [slideOut, setSlideOut] = useState(false);
   const [firstLineText, setFirstLineText] = useState("Inspired by imagination");
 
   const textSequence: TextAnimationProps[] = [
@@ -35,20 +33,8 @@ const HeroSection: React.FC = () => {
     if (!textVisible) return;
     
     // Animation sequence
-    const slideTimer = setTimeout(() => {
-      if (currentTextIndex < 3) {
-        setSlideOut(true);
-      }
-    }, textSequence[currentTextIndex].delay - 1500);
-    
-    const fadeTimer = setTimeout(() => {
-      setFadeOut(true);
-    }, textSequence[currentTextIndex].delay - 1000);
-    
     const nextTextTimer = setTimeout(() => {
       setTextVisible(false);
-      setSlideOut(false);
-      setFadeOut(false);
       
       // Change first line text when fourth text (Imagination) appears
       if (currentTextIndex === 2) { // About to show the fourth text (index 3)
@@ -64,8 +50,6 @@ const HeroSection: React.FC = () => {
     }, textSequence[currentTextIndex].delay);
     
     return () => {
-      clearTimeout(slideTimer);
-      clearTimeout(fadeTimer);
       clearTimeout(nextTextTimer);
     };
   }, [currentTextIndex, textVisible]);
@@ -96,10 +80,8 @@ const HeroSection: React.FC = () => {
             <h1 
               className={`text-4xl md:text-6xl lg:text-7xl font-light tracking-tight 
                 ${textVisible ? 'opacity-100' : 'opacity-0'} 
-                transition-all duration-500 
-                ${slideOut ? 'translate-y-[-50px]' : ''} 
-                ${fadeOut ? 'opacity-0' : ''} text-glow`}
-              style={{ transitionProperty: 'opacity, transform' }}
+                transition-all duration-500 text-glow`}
+              style={{ transitionProperty: 'opacity' }}
             >
               {textSequence[currentTextIndex].originalText}
             </h1>

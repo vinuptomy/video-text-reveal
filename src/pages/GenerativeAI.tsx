@@ -15,7 +15,7 @@ const GenerativeAI: React.FC = () => {
         <h1 className="text-4xl md:text-5xl font-light text-blue-dark mb-6">Generative AI Solutions</h1>
         
         <img 
-          src="https://images.unsplash.com/photo-1677442135136-760c813a743a?q=80&w=1932&auto=format&fit=crop" 
+          src="https://images.unsplash.com/photo-1677442135136-760c813a743a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1932&q=80" 
           alt="Generative AI Visualization" 
           className="w-full h-64 md:h-80 object-cover rounded-lg mb-8"
         />

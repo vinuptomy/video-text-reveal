@@ -16,27 +16,27 @@ const ImageGrid: React.FC = () => {
   
   const images: ImageProps[] = [
     {
-      src: "https://images.unsplash.com/photo-1677442135136-760c813a743a?q=80&w=1932&auto=format&fit=crop",
+      src: "https://images.unsplash.com/photo-1677442135136-760c813a743a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1932&q=80",
       alt: "AI machine learning visualization",
       title: "Generative AI Solutions",
       description: "Custom AI solutions to transform your business processes",
-      gradient: "blue-gradient-light",
+      gradient: "from-blue-400 to-blue-600",
       link: "/generative-ai"
     },
     {
-      src: "https://images.unsplash.com/photo-1682687220363-35e4621ed990?q=80&w=1770&auto=format&fit=crop",
+      src: "https://images.unsplash.com/photo-1682687220363-35e4621ed990?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80",
       alt: "Futuristic AI interface",
       title: "AI Consulting Services",
       description: "Expert guidance on implementing AI in your organization",
-      gradient: "blue-gradient-medium",
+      gradient: "from-blue-500 to-blue-700",
       link: "/consulting"
     },
     {
-      src: "https://images.unsplash.com/photo-1676299481101-d18deb16ab3d?q=80&w=1780&auto=format&fit=crop",
+      src: "https://images.unsplash.com/photo-1676299481101-d18deb16ab3d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1780&q=80",
       alt: "AI agent concept",
       title: "Agentic AI Development",
       description: "Building autonomous AI agents for complex business tasks",
-      gradient: "blue-gradient-dark",
+      gradient: "from-blue-600 to-blue-800",
       link: "/agentic-ai"
     }
   ];
@@ -86,7 +86,7 @@ const ImageGrid: React.FC = () => {
               className="image-animate opacity-0 translate-y-10 transition-all duration-700 ease-out hover:scale-105 transition-transform"
               style={{ transitionDelay: `${index * 100}ms` }}
             >
-              <div className={`image-container shadow-lg aspect-[3/4] mb-6 overflow-hidden ${image.gradient}`}>
+              <div className={`image-container shadow-lg aspect-[3/4] mb-6 overflow-hidden bg-gradient-to-b ${image.gradient}`}>
                 <img 
                   src={image.src} 
                   alt={image.alt}
