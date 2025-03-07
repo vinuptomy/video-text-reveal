@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 
@@ -14,12 +13,10 @@ interface ImageProps {
 const ImageGrid: React.FC = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
   
-  // Use the same image for all cards
-  const commonImage = "https://images.unsplash.com/photo-1677442135136-760c813a743a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1932&q=80";
-  
+  // Use generative AI related images from Unsplash
   const images: ImageProps[] = [
     {
-      src: commonImage,
+      src: "https://images.unsplash.com/photo-1686193381419-8bc3748ed93b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
       alt: "AI machine learning visualization",
       title: "Generative AI Solutions",
       description: "Custom AI solutions to transform your business processes",
@@ -27,7 +24,7 @@ const ImageGrid: React.FC = () => {
       link: "/generative-ai"
     },
     {
-      src: commonImage,
+      src: "https://images.unsplash.com/photo-1683009427540-c5bd6a32abf6?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
       alt: "Futuristic AI interface",
       title: "AI Consulting Services",
       description: "Expert guidance on implementing AI in your organization",
@@ -35,7 +32,7 @@ const ImageGrid: React.FC = () => {
       link: "/consulting"
     },
     {
-      src: commonImage,
+      src: "https://images.unsplash.com/photo-1677442135136-760c813a743a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1932&q=80",
       alt: "AI agent concept",
       title: "Agentic AI Development",
       description: "Building autonomous AI agents for complex business tasks",
