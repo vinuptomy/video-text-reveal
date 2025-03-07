@@ -1,5 +1,6 @@
 
 import React, { useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
 
 interface ImageProps {
   src: string;
@@ -7,6 +8,7 @@ interface ImageProps {
   title: string;
   description: string;
   gradient: string;
+  link: string;
 }
 
 const ImageGrid: React.FC = () => {
@@ -14,25 +16,28 @@ const ImageGrid: React.FC = () => {
   
   const images: ImageProps[] = [
     {
-      src: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1964&auto=format&fit=crop",
-      alt: "Abstract architectural design",
-      title: "Minimalist Design",
-      description: "Embracing simplicity in form and function",
-      gradient: "blue-gradient-light"
+      src: "https://images.unsplash.com/photo-1677442135136-760c813a743a?q=80&w=1932&auto=format&fit=crop",
+      alt: "AI machine learning visualization",
+      title: "Generative AI Solutions",
+      description: "Custom AI solutions to transform your business processes",
+      gradient: "blue-gradient-light",
+      link: "/generative-ai"
     },
     {
-      src: "https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=2071&auto=format&fit=crop",
-      alt: "Modern interior with subtle lighting",
-      title: "Thoughtful Spaces",
-      description: "Creating environments that inspire creativity",
-      gradient: "blue-gradient-medium"
+      src: "https://images.unsplash.com/photo-1682687220363-35e4621ed990?q=80&w=1770&auto=format&fit=crop",
+      alt: "Futuristic AI interface",
+      title: "AI Consulting Services",
+      description: "Expert guidance on implementing AI in your organization",
+      gradient: "blue-gradient-medium",
+      link: "/consulting"
     },
     {
-      src: "https://images.unsplash.com/photo-1493723843671-1d655e66ac1c?q=80&w=2070&auto=format&fit=crop",
-      alt: "Intricate product detail",
-      title: "Precision Crafted",
-      description: "Every detail meticulously considered",
-      gradient: "blue-gradient-dark"
+      src: "https://images.unsplash.com/photo-1676299481101-d18deb16ab3d?q=80&w=1780&auto=format&fit=crop",
+      alt: "AI agent concept",
+      title: "Agentic AI Development",
+      description: "Building autonomous AI agents for complex business tasks",
+      gradient: "blue-gradient-dark",
+      link: "/agentic-ai"
     }
   ];
 
@@ -68,16 +73,17 @@ const ImageGrid: React.FC = () => {
   return (
     <section ref={sectionRef} className="py-20 px-4 md:px-8 bg-white">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-light text-center mb-4 text-blue-dark">Creative Vision</h2>
+        <h2 className="text-3xl md:text-4xl font-light text-center mb-4 text-blue-dark">Our AI Expertise</h2>
         <p className="text-center text-blue-DEFAULT max-w-2xl mx-auto mb-16">
-          Every element designed with purpose, creating a harmonious balance between form and function.
+          Leveraging the power of artificial intelligence to drive innovation and business transformation.
         </p>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {images.map((image, index) => (
-            <div 
+            <Link 
+              to={image.link} 
               key={index} 
-              className="image-animate opacity-0 translate-y-10 transition-all duration-700 ease-out"
+              className="image-animate opacity-0 translate-y-10 transition-all duration-700 ease-out hover:scale-105 transition-transform"
               style={{ transitionDelay: `${index * 100}ms` }}
             >
               <div className={`image-container shadow-lg aspect-[3/4] mb-6 overflow-hidden ${image.gradient}`}>
@@ -91,7 +97,7 @@ const ImageGrid: React.FC = () => {
               </div>
               <h3 className="text-xl font-medium mb-2 text-blue-DEFAULT">{image.title}</h3>
               <p className="text-blue-dark">{image.description}</p>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

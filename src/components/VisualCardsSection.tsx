@@ -9,39 +9,39 @@ const VisualCardsSection: React.FC = () => {
   const cards = [
     {
       id: "1",
-      image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2070&auto=format&fit=crop",
-      title: "Modern Architecture Principles",
-      category: "Design"
+      image: "https://images.unsplash.com/photo-1679958157990-f291c0bb88b9?q=80&w=1955&auto=format&fit=crop",
+      title: "The Future of Large Language Models",
+      category: "AI Research"
     },
     {
       id: "2",
-      image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=1916&auto=format&fit=crop",
-      title: "Sustainable Materials in Design",
-      category: "Innovation"
+      image: "https://images.unsplash.com/photo-1655720828083-8a3dde865201?q=80&w=1932&auto=format&fit=crop",
+      title: "Implementing AI in Enterprise Workflows",
+      category: "Strategy"
     },
     {
       id: "3",
-      image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2053&auto=format&fit=crop",
-      title: "Creating Inspirational Spaces",
-      category: "Lifestyle"
+      image: "https://images.unsplash.com/photo-1686191128864-3e2cfacf1aa8?q=80&w=1780&auto=format&fit=crop",
+      title: "Ethical Considerations in AI Development",
+      category: "Ethics"
     },
     {
       id: "4",
-      image: "https://images.unsplash.com/photo-1600566753051-f0b89df2dd90?q=80&w=2070&auto=format&fit=crop",
-      title: "Minimalist Interior Design",
-      category: "Design"
+      image: "https://images.unsplash.com/photo-1684079159853-e2c2728eed8f?q=80&w=1770&auto=format&fit=crop",
+      title: "AI-Driven Process Automation",
+      category: "Implementation"
     },
     {
       id: "5",
-      image: "https://images.unsplash.com/photo-1600566752355-35792bedcfea?q=80&w=2070&auto=format&fit=crop",
-      title: "The Art of Natural Light",
-      category: "Photography"
+      image: "https://images.unsplash.com/photo-1677442136019-21740b2dd9fb?q=80&w=1932&auto=format&fit=crop",
+      title: "The Rise of Multimodal AI Systems",
+      category: "Technology"
     },
     {
       id: "6",
-      image: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=2070&auto=format&fit=crop",
-      title: "Functional Beauty in Objects",
-      category: "Product Design"
+      image: "https://images.unsplash.com/photo-1692607431293-499496dcd826?q=80&w=1932&auto=format&fit=crop",
+      title: "AI Training Workshop Success Stories",
+      category: "Case Studies"
     }
   ];
 
@@ -80,13 +80,13 @@ const VisualCardsSection: React.FC = () => {
         <div className="flex items-center justify-center mb-4">
           <Sparkles className="text-purple-DEFAULT w-6 h-6 mr-2" />
           <h2 className="text-3xl md:text-4xl font-light text-center text-purple-dark">
-            Featured Stories
+            AI Insights & Resources
           </h2>
           <Sparkles className="text-purple-DEFAULT w-6 h-6 ml-2" />
         </div>
         
         <p className="text-center text-blue-dark max-w-2xl mx-auto mb-16">
-          Explore our collection of articles and insights on design, innovation, and creative thinking.
+          Explore our collection of articles, case studies, and research on artificial intelligence and machine learning.
         </p>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">

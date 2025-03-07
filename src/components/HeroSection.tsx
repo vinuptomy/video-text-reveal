@@ -11,8 +11,8 @@ interface TextAnimationProps {
 const HeroSection: React.FC = () => {
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
   const [textVisible, setTextVisible] = useState(false);
-  const [strikeThrough, setStrikeThrough] = useState(false);
   const [fadeOut, setFadeOut] = useState(false);
+  const [slideOut, setSlideOut] = useState(false);
   const [firstLineText, setFirstLineText] = useState("Inspired by imagination");
 
   const textSequence: TextAnimationProps[] = [
@@ -35,12 +35,11 @@ const HeroSection: React.FC = () => {
     if (!textVisible) return;
     
     // Animation sequence
-    const strikeTimer = setTimeout(() => {
-      // Only apply strikethrough to the first three iterations
+    const slideTimer = setTimeout(() => {
       if (currentTextIndex < 3) {
-        setStrikeThrough(true);
+        setSlideOut(true);
       }
-    }, textSequence[currentTextIndex].delay - 2000);
+    }, textSequence[currentTextIndex].delay - 1500);
     
     const fadeTimer = setTimeout(() => {
       setFadeOut(true);
@@ -48,7 +47,7 @@ const HeroSection: React.FC = () => {
     
     const nextTextTimer = setTimeout(() => {
       setTextVisible(false);
-      setStrikeThrough(false);
+      setSlideOut(false);
       setFadeOut(false);
       
       // Change first line text when fourth text (Imagination) appears
@@ -65,7 +64,7 @@ const HeroSection: React.FC = () => {
     }, textSequence[currentTextIndex].delay);
     
     return () => {
-      clearTimeout(strikeTimer);
+      clearTimeout(slideTimer);
       clearTimeout(fadeTimer);
       clearTimeout(nextTextTimer);
     };
@@ -81,7 +80,7 @@ const HeroSection: React.FC = () => {
         playsInline
       >
         <source 
-          src="https://cdn.pixabay.com/vimeo/328214420/sunrise-25751.mp4?width=1280&hash=bd8e2eb4d219ec0fbcaed759d88ec21d43aef9f0" 
+          src="https://cdn.pixabay.com/vimeo/562517013/digital-earth-70240.mp4?width=1280&hash=97de2a7a3b3cf8cbfb4572e47c81373e494b7cf7" 
           type="video/mp4" 
         />
         Your browser does not support the video tag.
@@ -93,19 +92,26 @@ const HeroSection: React.FC = () => {
             {firstLineText}
           </h2>
           
-          <div className="h-24 flex items-center justify-center">
-            <h1 className={`text-4xl md:text-6xl lg:text-7xl font-light tracking-tight ${textVisible ? 'opacity-100' : 'opacity-0'} transition-opacity duration-500 ${strikeThrough ? 'text-stroke active' : ''} ${fadeOut ? 'opacity-30' : ''} text-glow`}>
+          <div className="h-24 flex items-center justify-center overflow-hidden">
+            <h1 
+              className={`text-4xl md:text-6xl lg:text-7xl font-light tracking-tight 
+                ${textVisible ? 'opacity-100' : 'opacity-0'} 
+                transition-all duration-500 
+                ${slideOut ? 'translate-y-[-50px]' : ''} 
+                ${fadeOut ? 'opacity-0' : ''} text-glow`}
+              style={{ transitionProperty: 'opacity, transform' }}
+            >
               {textSequence[currentTextIndex].originalText}
             </h1>
           </div>
           
           <p className="text-lg md:text-xl mt-6 max-w-2xl mx-auto font-light opacity-0 animate-fade-in" style={{ animationDelay: '0.6s' }}>
-            Crafting digital experiences through a blend of artistry and technology.
+            Transforming businesses through cutting-edge AI solutions and expert consulting.
           </p>
           
           <div className="mt-10 opacity-0 animate-fade-in" style={{ animationDelay: '0.9s' }}>
             <button className="px-8 py-3 bg-blue-DEFAULT hover:bg-blue-dark text-white transition-all duration-300 rounded-md text-sm tracking-wider shadow-lg hover:shadow-xl">
-              EXPLORE
+              EXPLORE SERVICES
             </button>
           </div>
         </div>

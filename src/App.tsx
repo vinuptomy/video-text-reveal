@@ -7,6 +7,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import Article from "./pages/Article";
 import NotFound from "./pages/NotFound";
+import GenerativeAI from "./pages/GenerativeAI";
+import Consulting from "./pages/Consulting";
+import AgenticAI from "./pages/AgenticAI";
 
 const queryClient = new QueryClient();
 
@@ -19,6 +22,9 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/article/:id" element={<Article />} />
+          <Route path="/generative-ai" element={<GenerativeAI />} />
+          <Route path="/consulting" element={<Consulting />} />
+          <Route path="/agentic-ai" element={<AgenticAI />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
