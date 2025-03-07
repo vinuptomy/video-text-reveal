@@ -14,9 +14,12 @@ interface ImageProps {
 const ImageGrid: React.FC = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
   
+  // Use the same image for all cards
+  const commonImage = "https://images.unsplash.com/photo-1677442135136-760c813a743a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1932&q=80";
+  
   const images: ImageProps[] = [
     {
-      src: "https://images.unsplash.com/photo-1677442135136-760c813a743a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1932&q=80",
+      src: commonImage,
       alt: "AI machine learning visualization",
       title: "Generative AI Solutions",
       description: "Custom AI solutions to transform your business processes",
@@ -24,7 +27,7 @@ const ImageGrid: React.FC = () => {
       link: "/generative-ai"
     },
     {
-      src: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-4.0.3&auto=format&fit=crop&w=1965&q=80",
+      src: commonImage,
       alt: "Futuristic AI interface",
       title: "AI Consulting Services",
       description: "Expert guidance on implementing AI in your organization",
@@ -32,7 +35,7 @@ const ImageGrid: React.FC = () => {
       link: "/consulting"
     },
     {
-      src: "https://images.unsplash.com/photo-1675483344627-5ef16e96ef7e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1770&q=80",
+      src: commonImage,
       alt: "AI agent concept",
       title: "Agentic AI Development",
       description: "Building autonomous AI agents for complex business tasks",
