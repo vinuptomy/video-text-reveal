@@ -14,10 +14,10 @@ interface ImageProps {
 const ImageGrid: React.FC = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
   
-  // Updated with direct image URLs from Unsplash instead of webpage links
+  // Updated with direct image URL from Pexels for the first image
   const images: ImageProps[] = [
     {
-      src: "https://images.unsplash.com/photo-1629429408209-1f912961dbd8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      src: "https://images.pexels.com/photos/2599244/pexels-photo-2599244.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       alt: "Computer keyboard sitting on top of a computer mouse",
       title: "AI Consulting Services",
       description: "Expert guidance on implementing AI in your organization",
