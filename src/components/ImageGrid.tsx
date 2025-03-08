@@ -17,7 +17,7 @@ const ImageGrid: React.FC = () => {
   // Updated with new images from Unsplash
   const images: ImageProps[] = [
     {
-      src: "https://images.unsplash.com/photo-1677788010700-5ab2edb21fca?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
+      src: "https://unsplash.com/photos/black-and-white-robot-toy-on-red-wooden-table-zwd435-ewb4",
       alt: "Black and white robot toy on red wooden table",
       title: "Generative AI Solutions",
       description: "Custom AI solutions to transform your business processes",
@@ -25,7 +25,7 @@ const ImageGrid: React.FC = () => {
       link: "/generative-ai"
     },
     {
-      src: "https://images.unsplash.com/photo-1661347998423-b15d37d6f61e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
+      src: "https://unsplash.com/photos/a-computer-keyboard-sitting-on-top-of-a-computer-mouse-AMAYQqzQYaI",
       alt: "Computer keyboard sitting on top of a computer mouse",
       title: "AI Consulting Services",
       description: "Expert guidance on implementing AI in your organization",
@@ -33,7 +33,7 @@ const ImageGrid: React.FC = () => {
       link: "/consulting"
     },
     {
-      src: "https://images.unsplash.com/photo-1676820046237-b254289c688c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1932&q=80",
+      src: "https://unsplash.com/photos/an-abstract-image-of-a-sphere-with-dots-and-lines-nGoCBxiaRO0",
       alt: "Abstract image of a sphere with dots and lines",
       title: "Agentic AI Development",
       description: "Building autonomous AI agents for complex business tasks",
