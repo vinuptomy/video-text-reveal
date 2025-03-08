@@ -1,3 +1,4 @@
+
 import React, { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 
@@ -13,27 +14,27 @@ interface ImageProps {
 const ImageGrid: React.FC = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
   
-  // Use generative AI related images from Unsplash
+  // Updated with new images from Unsplash
   const images: ImageProps[] = [
     {
-      src: "https://images.unsplash.com/photo-1686193381419-8bc3748ed93b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
-      alt: "AI machine learning visualization",
+      src: "https://images.unsplash.com/photo-1677788010700-5ab2edb21fca?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
+      alt: "Black and white robot toy on red wooden table",
       title: "Generative AI Solutions",
       description: "Custom AI solutions to transform your business processes",
       gradient: "from-blue-400 to-blue-600",
       link: "/generative-ai"
     },
     {
-      src: "https://images.unsplash.com/photo-1683009427540-c5bd6a32abf6?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
-      alt: "Futuristic AI interface",
+      src: "https://images.unsplash.com/photo-1661347998423-b15d37d6f61e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
+      alt: "Computer keyboard sitting on top of a computer mouse",
       title: "AI Consulting Services",
       description: "Expert guidance on implementing AI in your organization",
       gradient: "from-blue-500 to-blue-700",
       link: "/consulting"
     },
     {
-      src: "https://images.unsplash.com/photo-1677442135136-760c813a743a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1932&q=80",
-      alt: "AI agent concept",
+      src: "https://images.unsplash.com/photo-1676820046237-b254289c688c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1932&q=80",
+      alt: "Abstract image of a sphere with dots and lines",
       title: "Agentic AI Development",
       description: "Building autonomous AI agents for complex business tasks",
       gradient: "from-blue-600 to-blue-800",

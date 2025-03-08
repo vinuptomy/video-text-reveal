@@ -1,3 +1,4 @@
+
 import React, { useRef, useEffect } from 'react';
 import VisualCard from './VisualCard';
 import { Sparkles } from 'lucide-react';
@@ -5,46 +6,46 @@ import { Sparkles } from 'lucide-react';
 const VisualCardsSection: React.FC = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
   
-  // Use generative AI related images from Unsplash
+  // Updated with new images from Unsplash
   const cards = [
     {
       id: "1",
-      image: "https://images.unsplash.com/photo-1702752119059-4f9283f1d525?ixlib=rb-4.0.3&auto=format&fit=crop&w=2069&q=80",
+      image: "https://images.unsplash.com/photo-1631861937685-e2c3a1fecde9?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
       title: "The Future of Large Language Models",
       category: "AI Research",
       gradient: "from-blue-800 to-purple-800"
     },
     {
       id: "2",
-      image: "https://images.unsplash.com/photo-1701977407869-c24cd7c7e77a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1974&q=80",
+      image: "https://images.unsplash.com/photo-1686003571669-30113d9922cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1974&q=80",
       title: "Implementing AI in Enterprise Workflows",
       category: "Strategy",
       gradient: "from-purple-800 to-pink-700"
     },
     {
       id: "3",
-      image: "https://images.unsplash.com/photo-1701977407240-3aa425fc229e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1974&q=80",
+      image: "https://images.unsplash.com/photo-1684779847639-fbcc5a57ccac?ixlib=rb-4.0.3&auto=format&fit=crop&w=1974&q=80",
       title: "Ethical Considerations in AI Development",
       category: "Ethics",
       gradient: "from-pink-700 to-red-700"
     },
     {
       id: "4",
-      image: "https://images.unsplash.com/photo-1683009427598-10957bb9689a?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
+      image: "https://images.unsplash.com/photo-1683612873214-e1d58c721e94?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
       title: "AI-Driven Process Automation",
       category: "Implementation",
       gradient: "from-blue-800 to-cyan-600"
     },
     {
       id: "5",
-      image: "https://images.unsplash.com/photo-1686348453102-af55cece8bc7?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
+      image: "https://images.unsplash.com/photo-1705622201406-885ec507f059?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
       title: "The Rise of Multimodal AI Systems",
       category: "Technology",
       gradient: "from-emerald-700 to-green-800"
     },
     {
       id: "6",
-      image: "https://images.unsplash.com/photo-1679958157996-c14a4e555e0f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2074&q=80",
+      image: "https://images.unsplash.com/photo-1705622201406-885ec507f059?ixlib=rb-4.0.3&auto=format&fit=crop&w=2074&q=80",
       title: "AI Training Workshop Success Stories",
       category: "Case Studies",
       gradient: "from-indigo-800 to-violet-900"
