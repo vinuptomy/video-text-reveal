@@ -17,20 +17,20 @@ const ImageGrid: React.FC = () => {
   // Updated with direct image URLs from Unsplash instead of webpage links
   const images: ImageProps[] = [
     {
-      src: "https://images.unsplash.com/photo-1550645612-83f5d594b671?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-      alt: "Black and white robot toy on red wooden table",
-      title: "Generative AI Solutions",
-      description: "Custom AI solutions to transform your business processes",
-      gradient: "from-blue-400 to-blue-600",
-      link: "/generative-ai"
-    },
-    {
       src: "https://images.unsplash.com/photo-1629429408209-1f912961dbd8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
       alt: "Computer keyboard sitting on top of a computer mouse",
       title: "AI Consulting Services",
       description: "Expert guidance on implementing AI in your organization",
       gradient: "from-blue-500 to-blue-700",
       link: "/consulting"
+    },
+    {
+      src: "https://images.unsplash.com/photo-1550645612-83f5d594b671?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      alt: "Black and white robot toy on red wooden table",
+      title: "Generative AI Solutions",
+      description: "Custom AI solutions to transform your business processes",
+      gradient: "from-blue-400 to-blue-600",
+      link: "/generative-ai"
     },
     {
       src: "https://images.unsplash.com/photo-1639762681057-408e52192e55?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
