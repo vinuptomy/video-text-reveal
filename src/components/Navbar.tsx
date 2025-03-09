@@ -11,18 +11,20 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <nav className="sticky top-0 z-50 bg-white shadow-sm">
+    <nav className="sticky top-0 z-50 bg-white shadow-md">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-20">
-          {/* Logo */}
+          {/* Logo with improved visibility */}
           <div className="flex-shrink-0 flex items-center">
             <Link to="/" className="flex items-center">
-              <img 
-                src="/lovable-uploads/1a7fe7c0-b53f-423f-9d25-7044a5d4c38c.png" 
-                alt="Munter AI Logo" 
-                className="h-12 w-auto"
-              />
-              <span className="ml-3 text-xl font-medium text-blue-dark">Munter AI</span>
+              <div className="bg-white p-1 rounded-md shadow-sm">
+                <img 
+                  src="/lovable-uploads/1a7fe7c0-b53f-423f-9d25-7044a5d4c38c.png" 
+                  alt="Munter AI Logo" 
+                  className="h-12 w-auto"
+                />
+              </div>
+              <span className="ml-3 text-xl font-bold text-blue-dark">Munter AI</span>
             </Link>
           </div>
           
