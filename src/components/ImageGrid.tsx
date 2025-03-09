@@ -14,7 +14,7 @@ interface ImageProps {
 const ImageGrid: React.FC = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
   
-  // Updated with direct image URL from Pexels for the first image
+  // Updated with direct image URLs from Pexels
   const images: ImageProps[] = [
     {
       src: "https://images.pexels.com/photos/2599244/pexels-photo-2599244.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
@@ -25,8 +25,8 @@ const ImageGrid: React.FC = () => {
       link: "/consulting"
     },
     {
-      src: "https://images.unsplash.com/photo-1550645612-83f5d594b671?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-      alt: "Black and white robot toy on red wooden table",
+      src: "https://images.pexels.com/photos/8438918/pexels-photo-8438918.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      alt: "Person working with AI on a computer",
       title: "Generative AI Solutions",
       description: "Custom AI solutions to transform your business processes",
       gradient: "from-blue-400 to-blue-600",
