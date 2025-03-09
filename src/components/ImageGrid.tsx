@@ -33,8 +33,8 @@ const ImageGrid: React.FC = () => {
       link: "/generative-ai"
     },
     {
-      src: "https://images.unsplash.com/photo-1639762681057-408e52192e55?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-      alt: "Abstract image of a sphere with dots and lines",
+      src: "/lovable-uploads/a8c8286e-cc8c-4d10-ab0c-b39b18a33c8f.png",
+      alt: "Futuristic blue AI network visualization",
       title: "Agentic AI Development",
       description: "Building autonomous AI agents for complex business tasks",
       gradient: "from-blue-600 to-blue-800",
