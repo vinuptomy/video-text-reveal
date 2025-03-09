@@ -25,8 +25,8 @@ const ImageGrid: React.FC = () => {
       link: "/consulting"
     },
     {
-      src: "https://images.pexels.com/photos/8438918/pexels-photo-8438918.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      alt: "Person working with AI on a computer",
+      src: "/lovable-uploads/87f1e0c9-342b-44c9-b02e-052ca2228f59.png",
+      alt: "Futuristic AI concept with glowing blue hexagon and circuit board",
       title: "Generative AI Solutions",
       description: "Custom AI solutions to transform your business processes",
       gradient: "from-blue-400 to-blue-600",
