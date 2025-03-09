@@ -10,6 +10,8 @@ import NotFound from "./pages/NotFound";
 import GenerativeAI from "./pages/GenerativeAI";
 import Consulting from "./pages/Consulting";
 import AgenticAI from "./pages/AgenticAI";
+import Contact from "./pages/Contact";
+import Navbar from "./components/Navbar";
 
 const queryClient = new QueryClient();
 
@@ -19,12 +21,14 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <Navbar />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/article/:id" element={<Article />} />
           <Route path="/generative-ai" element={<GenerativeAI />} />
           <Route path="/consulting" element={<Consulting />} />
           <Route path="/agentic-ai" element={<AgenticAI />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
