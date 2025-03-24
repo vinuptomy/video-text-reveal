@@ -1,6 +1,5 @@
 
 import React from 'react';
-import HeroSection from '../components/HeroSection';
 import ImageGrid from '../components/ImageGrid';
 import VisualCardsSection from '../components/VisualCardsSection';
 import { Sparkles } from 'lucide-react';
@@ -8,7 +7,6 @@ import { Sparkles } from 'lucide-react';
 const Index: React.FC = () => {
   return (
     <div className="overflow-hidden">
-      <HeroSection />
       <ImageGrid />
       <VisualCardsSection />
       
