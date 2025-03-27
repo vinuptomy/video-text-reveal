@@ -46,7 +46,7 @@ const Index: React.FC = () => {
           </div>
           
           <p className="mt-8 text-blue-DEFAULT text-sm">
-            © {new Date().getFullYear()} Design Studio. All rights reserved.
+            © {new Date().getFullYear()} Munter AI. All rights reserved.
           </p>
         </div>
       </footer>

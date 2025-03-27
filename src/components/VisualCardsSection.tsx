@@ -6,46 +6,46 @@ import { Sparkles } from 'lucide-react';
 const VisualCardsSection: React.FC = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
   
-  // Updated with new images from Unsplash
+  // Updated with new uploaded images, alternating between the three images
   const cards = [
     {
       id: "1",
-      image: "https://images.unsplash.com/photo-1631861937685-e2c3a1fecde9?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
+      image: "/lovable-uploads/176c01de-a533-4e4a-be66-43fc129190f7.png",
       title: "The Future of Large Language Models",
       category: "AI Research",
       gradient: "from-blue-800 to-purple-800"
     },
     {
       id: "2",
-      image: "https://images.unsplash.com/photo-1686003571669-30113d9922cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1974&q=80",
+      image: "/lovable-uploads/5a1e1d68-5703-4f8d-8180-0a7d05fc51cb.png",
       title: "Implementing AI in Enterprise Workflows",
       category: "Strategy",
       gradient: "from-purple-800 to-pink-700"
     },
     {
       id: "3",
-      image: "https://images.unsplash.com/photo-1684779847639-fbcc5a57ccac?ixlib=rb-4.0.3&auto=format&fit=crop&w=1974&q=80",
+      image: "/lovable-uploads/41fa346d-3d8b-4383-834d-d9b6839c43e7.png",
       title: "Ethical Considerations in AI Development",
       category: "Ethics",
       gradient: "from-pink-700 to-red-700"
     },
     {
       id: "4",
-      image: "https://images.unsplash.com/photo-1683612873214-e1d58c721e94?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
+      image: "/lovable-uploads/176c01de-a533-4e4a-be66-43fc129190f7.png",
       title: "AI-Driven Process Automation",
       category: "Implementation",
       gradient: "from-blue-800 to-cyan-600"
     },
     {
       id: "5",
-      image: "https://images.unsplash.com/photo-1705622201406-885ec507f059?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
+      image: "/lovable-uploads/5a1e1d68-5703-4f8d-8180-0a7d05fc51cb.png",
       title: "The Rise of Multimodal AI Systems",
       category: "Technology",
       gradient: "from-emerald-700 to-green-800"
     },
     {
       id: "6",
-      image: "https://images.unsplash.com/photo-1705622201406-885ec507f059?ixlib=rb-4.0.3&auto=format&fit=crop&w=2074&q=80",
+      image: "/lovable-uploads/41fa346d-3d8b-4383-834d-d9b6839c43e7.png",
       title: "AI Training Workshop Success Stories",
       category: "Case Studies",
       gradient: "from-indigo-800 to-violet-900"
