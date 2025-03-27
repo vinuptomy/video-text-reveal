@@ -15,13 +15,13 @@ const HeroSection: React.FC = () => {
 
   return (
     <div className="relative h-screen w-full overflow-hidden">
-      {/* Single mountain background image with darker overlay */}
+      {/* Single mountain background image with overlay */}
       <div className="absolute inset-0 bg-blue-950">
-        {/* Mountain image with full opacity */}
-        <div className="absolute inset-0 h-full w-full bg-[url('https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80')] bg-cover bg-center"></div>
+        {/* Brighter mountain image with full opacity */}
+        <div className="absolute inset-0 h-full w-full bg-[url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2000&q=80')] bg-cover bg-center"></div>
         
-        {/* Darker overlay to ensure text readability */}
-        <div className="absolute inset-0 bg-black/50"></div>
+        {/* Lighter overlay to maintain brightness but ensure text readability */}
+        <div className="absolute inset-0 bg-black/40 bg-gradient-to-t from-blue-950/70 to-transparent"></div>
       </div>
       
       {/* Content overlay */}

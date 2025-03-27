@@ -6,7 +6,7 @@ import { Sparkles } from 'lucide-react';
 const VisualCardsSection: React.FC = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
   
-  // Updated with new uploaded images, alternating between the three images
+  // Updated with new uploaded images, with the last 3 cards using the newly provided images
   const cards = [
     {
       id: "1",
@@ -31,21 +31,21 @@ const VisualCardsSection: React.FC = () => {
     },
     {
       id: "4",
-      image: "/lovable-uploads/176c01de-a533-4e4a-be66-43fc129190f7.png",
+      image: "/lovable-uploads/d73efd0f-e6fd-4bad-95e3-3e1d44150fe5.png",
       title: "AI-Driven Process Automation",
       category: "Implementation",
       gradient: "from-blue-800 to-cyan-600"
     },
     {
       id: "5",
-      image: "/lovable-uploads/5a1e1d68-5703-4f8d-8180-0a7d05fc51cb.png",
+      image: "/lovable-uploads/9310c4d7-0933-499a-af11-1726ebc6e54b.png",
       title: "The Rise of Multimodal AI Systems",
       category: "Technology",
       gradient: "from-emerald-700 to-green-800"
     },
     {
       id: "6",
-      image: "/lovable-uploads/41fa346d-3d8b-4383-834d-d9b6839c43e7.png",
+      image: "/lovable-uploads/ad293b85-9bad-48d3-83d2-63d77030b8ce.png",
       title: "AI Training Workshop Success Stories",
       category: "Case Studies",
       gradient: "from-indigo-800 to-violet-900"
