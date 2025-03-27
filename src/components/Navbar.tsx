@@ -18,7 +18,7 @@ const Navbar: React.FC = () => {
           <div className="flex-shrink-0 flex items-center">
             <Link to="/" className="flex items-center">
               <img 
-                src="/lovable-uploads/1a7fe7c0-b53f-423f-9d25-7044a5d4c38c.png" 
+                src="/lovable-uploads/1fb85011-ddb2-47a5-b309-3c000bb6ed6c.png" 
                 alt="Munter AI Logo" 
                 className="h-12 w-auto"
               />
